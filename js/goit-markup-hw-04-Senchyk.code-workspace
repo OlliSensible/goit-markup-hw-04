@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "goit-markup-hw-04-Senchyk",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js"
+	}
+}
