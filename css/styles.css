@@ -9,6 +9,7 @@
   --white-portfolio-color: #E7E9FC; 
   --light-black-color: #8e8f99;
   --green: #31d0aa;
+  --dairy: #fcfcfc;
   --text-color-rgb: 46, 47, 66;
 }
 
@@ -528,13 +529,21 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(var(--text-color-rgb), 0.4);
+  background-color: rgba(var(--navy-blue-rgb), 0.4);
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -544,7 +553,7 @@ header {
   min-height: 584px;
   max-width: 408px;
   width: 100%;
-  background-color: var(--white-portfolio-color);
+  background-color: var(--dairy);
   border-radius: 4px;
 }
 
@@ -562,11 +571,30 @@ header {
   width: 24px;
   height: 24px;
   padding: 0;
+  transition-property: background-color, border-top-color, border-left-color, border-bottom-color, border-right-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button-cross {
   fill: var(--text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+
+.modal-close-button:hover > .modal-close-button-cross,
+.modal-close-button:focus > .modal-close-button-cross {
+  fill: var(--white-color);
+}
+
 
 footer {
   background-color: var(--text-color);
