@@ -366,10 +366,9 @@ header {
 }
 
 .team-contacts-icon {
-  width: 16px;
-  height: 16px;
   margin: auto;
   fill: var(--accent-color-light);
+  padding: 11px;
 }
 
 .customers-section {
@@ -403,7 +402,6 @@ header {
   fill: var(--light-black-color);
   margin: 0 auto;
   display: block;
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -540,7 +538,6 @@ header {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
